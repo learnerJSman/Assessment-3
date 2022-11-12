@@ -1,0 +1,31 @@
+#simple beginer projects/ideas i found on the internet which i could try. No answers so lets see where i will get
+
+# pynthon needs to import this code to run the random number function
+import random
+
+# number guessing game
+
+# generate a random number between 1-20
+# def random_number():
+a = random.randint(1, 20)
+# the actual code does not need to be in a function. that was for testing purposes
+
+# working out if the code generates a random number. appears to work fine
+# i = True
+# while i:
+#    answer = input('Would you like to generate a random number yes or no? ')
+#    if answer.lower() == 'yes':
+#        random_number()
+#    elif answer.lower() == 'no':
+#        i = False
+
+# save randomly generated number in a variable
+i = True
+while i:
+    num = input('Please guess a number between 1-20: ')
+    #make sure that we are guessing a number using the int() function
+    if int(num) == a:
+        print('congratulations you got it correct!')
+        i = False
+    else:
+        print('incorrect: ')
