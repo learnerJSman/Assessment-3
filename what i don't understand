@@ -1,0 +1,24 @@
+when we make a class we can makes instances of the class, however, i still don't underatand why we cannot iterate all of the instances
+e.g.
+
+class Computer():
+  def __init__(self, brand1, brand2, brand3):
+  self. brand1 = 'brand1'
+  self.brand2 = 'brand2'
+  self.brand3 = 'brand3'
+  
+site1 = Computer(apple,hp,dell)  
+  
+#trying to iterate through
+for instances in site1:
+  print(instances)
+  
+#this will bring up a 'this is not iterable method'
+#doing researched i have found a way to iternate over the instances
+
+def __iter__(self):
+def __next__(self):
+raise StopIteration
+
+# setting these 3 up only allow me to iterate over the 1 attribute from the instance e.g. self.brand1
+# do not understand why not
