@@ -22,6 +22,28 @@ Class Car:
 a = Car(polo, 25,000)   
 #this will have all the model, price, and brand instances
 
-import # can be used to not only import pynthon codes but can also be used to import your own pynthon variables
+#shorthand looping and forming a list from 
+L = [mapping-expression for element in source-list if filter-expression] #found this template for list expression online
+# the code aboce is the exact same as the one below
+result = []
+for element in source-list:
+     if filter-expression:
+        result.append(mapping-expression)
+#example of this code        
+result = []
+for i in range(10):
+    if i%2 == 0:
+       result.append(i)
+#As a list expression
+[i for i in range(10) if i%2 == 0]
 
+# researched what other shorthand expressions there where for more common things. found the IF else statement shorthand
+if-expression if (condition) else else-expression 
+#taking example from my assessment 2 code
+   if close_ticket == 'yes':
+        t_dict['Ticket Status:'] = 'closed'
+   else:
+        print('This ticket still needs to be resolved')
+#short form way
+[t_dict['Ticket_Status:'] = 'closed' if closed_ticket == 'yes' else print('This ticket still needs to be resolved')] 
 
