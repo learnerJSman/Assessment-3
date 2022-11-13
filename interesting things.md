@@ -22,4 +22,6 @@ Class Car:
 a = Car(polo, 25,000)   
 #this will have all the model, price, and brand instances
 
+import # can be used to not only import pynthon codes but can also be used to import your own pynthon variables
+
 
