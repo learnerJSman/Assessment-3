@@ -78,6 +78,9 @@ map(function, list) #saying to run this function over every element in the list
 
 #depending on use case a map may be better than a loop
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#keeping the code simple
+
 
 
 
