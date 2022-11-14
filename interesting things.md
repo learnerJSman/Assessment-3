@@ -22,9 +22,11 @@ Class Car:
 a = Car(polo, 25,000)   
 #this will have all the model, price, and brand instances
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 #shorthand looping and forming a list from 
 L = [mapping-expression for element in source-list if filter-expression] #found this template for list expression online
-# the code aboce is the exact same as the one below
+#the code above is the exact same as the one below
 result = []
 for element in source-list:
      if filter-expression:
@@ -37,7 +39,7 @@ for i in range(10):
 #As a list expression
 [i for i in range(10) if i%2 == 0]
 
-# researched what other shorthand expressions there where for more common things. found the IF else statement shorthand
+#researched what other shorthand expressions there where for more common things. found the IF else statement shorthand
 if-expression if (condition) else else-expression 
 #taking example from my assessment 2 code
    if close_ticket == 'yes':
@@ -46,4 +48,13 @@ if-expression if (condition) else else-expression
         print('This ticket still needs to be resolved')
 #short form way
 [t_dict['Ticket_Status:'] = 'closed' if closed_ticket == 'yes' else print('This ticket still needs to be resolved')] 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Recursives in pynthon - where you calculate the same thing over and over
+#using an import cache from the functools you can put it into memory
+
+@cache <-- can used stored data in the cache instead of calulating everything again
+
+
 
