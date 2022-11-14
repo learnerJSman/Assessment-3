@@ -56,5 +56,28 @@ if-expression if (condition) else else-expression
 
 @cache <-- can used stored data in the cache instead of calulating everything again
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#maps vs loops
+#maps appear to be much faster as processing code so can be a lot better when you want to run a piece of code for everything you want to iterate over from my research, however, it only runs a function over something that is iterable
+#example below
+
+list = [1,2,3,4,5,6]
+
+def function(a):
+   add_one = a + 1
+   print(add_one)
+   
+#using a for loop
+for elements in list:
+   add_one = elements + 1
+   print(add_one)
+   
+#using map
+map(function, list) #saying to run this function over every element in the list
+
+#depending on use case a map may be better than a loop
+
+
 
 
