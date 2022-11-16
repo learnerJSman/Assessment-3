@@ -29,6 +29,8 @@ while i:
         i = False
     else:
         print('incorrect: ')
+        
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 practicing with random number generators again
 
 # rock, paper, scissors
@@ -70,3 +72,22 @@ elif user == 'scissors':
         print('you win')
     elif computer == 'scissors':
         print('it is a draw')
+        
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+most interesting import function of all
+
+#you can import functions from other scripts you are working on
+#you could have 2 scripts 1 being first_code.py and 2 being second_code.py
+#you can use code from one to the other by using the import function
+
+#first_code.py
+
+def function_1(e):
+    return e * e
+    
+#second_code.py
+
+#importing from the other script
+from frist_code.py import function_1(e)
+
+
