@@ -22,3 +22,4 @@ raise StopIteration
 
 # setting these 3 up only allow me to iterate over the 1 attribute from the instance e.g. self.brand1
 # do not understand why not
+.
